@@ -36,7 +36,7 @@ else:
                 "SingleUserLabApp is deprecated, use SingleUserNotebookApp "
                 + "and set c.Spawner.default_url = '/lab' in "
                 + "jupyterhub_config.py",
-                warnings.DeprecationWarning,
+                DeprecationWarning,
             )
             super().init_webapp(*args, **kwargs)
 
